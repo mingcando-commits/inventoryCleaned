@@ -385,7 +385,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         val txtNotice = TextView(context).apply {
-            text = "安全防呆提示：\n為避免小螢幕按錯字母，密碼欄位已解除星號隱藏，將以明文顯示。"
+            text = "為避免小螢幕按錯字母，密碼欄位已解除星號隱藏，將以明文顯示。"
             textSize = 12f
             setTextColor(Color.parseColor("#D3D3D3"))
             setPadding(0, 0, 0, 20)
@@ -565,7 +565,8 @@ class HomeActivity : AppCompatActivity() {
             runOnUiThread {
                 AlertDialog.Builder(context).apply {
                     setTitle("權限攔截")
-                    setMessage("「人員權限與名冊維護」屬於高階管理員 (Admin) 核心主檔特權。\n\n普通操作人員 (Operator) 僅具備進出庫異動權限，無法存取此模組。")
+                    setMessage("「人員權限與名冊維護」屬於高階管理員 (Admin) 核心" +
+                            "特權。\n\n普通操作人員 (Operator) 僅具備進出庫異動權限，無法存取此模組。")
                     setCancelable(false)
                     setPositiveButton("OK", null)
                     show()
