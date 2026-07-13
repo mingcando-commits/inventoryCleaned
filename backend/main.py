@@ -55,7 +55,7 @@ DB_CONFIG = {
 }
 if not DB_CONFIG["password"]:
     logger.warning(
-        "DB_PASSWORD is not set. Set DB_HOST/DB_NAME/DB_USER/DB_PASSWORD/DB_PORT "
+        "inventoryCleaned: DB_PASSWORD is not set. Set DB_HOST/DB_NAME/DB_USER/DB_PASSWORD/DB_PORT "
         "in the environment, or DATABASE_URL for a hosted database."
     )
 
